@@ -37,7 +37,7 @@ To avoid re-evaluating already evaluated boards and positions, we use DP, which 
 # Hashing (Encoding boards / positions)
 To use dynamic programming efficiently as described before, we need to find a hash value for each board that holds a very small probability of collisions, the hashing process was the following:
 - First, we picked a prime modulus value to perform modular arithmetic operations and avoid having large hash values, the chosen value is $10 ^ 9 + 7$.
-- initially, the hash for an empty grid is 0
+- Initially, the hash for an empty grid is 0
 - For each cell that contains a disk of the first player, we add the value $5 ^ {index}$, where index is the index of the disk's cell if we flatten the board into a 1D list.
 - For each cell that contains a disk of the second player, we add the value $13 ^ {index}$, where index is the index of the disk's cell if we flatten the board into a 1D list.
 
