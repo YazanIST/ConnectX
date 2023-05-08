@@ -13,7 +13,7 @@ Parameters used are:
   - config.rows - number of rows in the game board (6 for Connect Four)
   - config.inarow - number of pieces a player needs to get in a row in order to win (4 for Connect Four)
 
-You can find more information and details [here](https://www.kaggle.com/code/alexisbcook/play-the-game)
+You can find more information and details [here](https://www.kaggle.com/code/alexisbcook/play-the-game) and [here](https://www.kaggle.com/code/ajeffries/connectx-getting-started).
 
 # The AI Agent
 - The algorithm mainly used is minimax, minimax by itself can run into a depth = 3 at maximum.
