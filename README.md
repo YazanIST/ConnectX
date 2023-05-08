@@ -42,9 +42,9 @@ To use dynamic programming efficiently as described before, we need to find a ha
 - For each cell that contains a disk of the second player, we add the value $13 ^ {index}$, where index is the index of the disk's cell if we flatten the board into a 1D list.
 
 **Notes**:
-- We used values (5, 13) to represent first and second player as prime random numbers to avoid collision.
+- We used values (5, 13) to represent the first and the second player's disks as prime random numbers to avoid collision.
 - Power and add operations are performed under mod ($mod = 10 ^ 9 + 7$).
-- To find index of cell after flattening, $index = row \cdot rowsize + col$.
+- To find the index of a cell after flattening, $index = row \cdot rowsize + col$.
 
 # Running The Notebook
 To run the notebook you will need to install kaggle-environments module first with the following command `!pip install kaggle-environments>=0.1.6`
