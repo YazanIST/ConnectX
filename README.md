@@ -9,9 +9,9 @@ Parameters used are:
   - obs.board - the game board (a Python list with one item for each grid location)
   - obs.mark - the piece assigned to the agent (either 1 or 2)
 - config
-  - config.columns - number of columns in the game board (7 for Connect Four)
-  - config.rows - number of rows in the game board (6 for Connect Four)
-  - config.inarow - number of pieces a player needs to get in a row in order to win (4 for Connect Four)
+  - config.columns - number of columns in the game board (7 in the case of Connect Four)
+  - config.rows - number of rows in the game board (6 in the case of Connect Four)
+  - config.inarow - number of pieces a player needs to get in a row in order to win (4 in the case of Connect Four)
 
 You can find more information and details [here](https://www.kaggle.com/code/alexisbcook/play-the-game) and [here](https://www.kaggle.com/code/ajeffries/connectx-getting-started).
 
