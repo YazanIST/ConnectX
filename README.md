@@ -48,3 +48,5 @@ To use dynamic programming efficiently as described before, we need to find a ha
 
 # Running The Notebook
 To run the notebook you will need to install kaggle-environments module first with the following command `!pip install kaggle-environments>=0.1.6`
+
+Or run it with google collab through [this link](https://colab.research.google.com/drive/1NPVWQzHTH5cGfSET1k7n7fWHa5S425q9?usp=sharing)
