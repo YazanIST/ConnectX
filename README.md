@@ -30,4 +30,7 @@ For each board we need to evaluate, we check all windows of size `config.inarow`
 
 The heuristic function needs more work, changing some values would probably improve the performance of the agent.
 
+# Memoization (Dynamic Programming)
+To avoid re-evaluating already evalutaed boards and positions, we use DP, which save the results for already evaluated boards, and to speed-up the process even more, we find a hash value for each board and store the evaluation for that board in a dictionary (Hash-Table) as a value for the hash used as a key value, so if we meet the same board again, we can simply check if it is already calculated, and if so, we return its value without re-evaluating it or going deeper in it's branch.
+
 **Note**: To run the notebook you will need to install kaggle-environments module first with the following command `!pip install kaggle-environments>=0.1.6`
