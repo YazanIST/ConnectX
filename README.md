@@ -16,9 +16,9 @@ Parameters used are:
 You can find more information and details [here](https://www.kaggle.com/code/alexisbcook/play-the-game) and [here](https://www.kaggle.com/code/ajeffries/connectx-getting-started).
 
 # The AI Agent
-- The algorithm mainly used is minimax, minimax by itself can run into a depth = 3 at maximum.
-- To speed up the algorithm, I used alpha-beta pruning to get rid of useless branches (This made the algorithm run up to depth = 4)
-- To speed up the algorithm furthermore, I used memoization (Dynamic Programming) to avoid re-evaluating already evaluated positions, which made the algorithm run into depth up to 5!
+- The algorithm mainly used is [minimax](https://en.wikipedia.org/wiki/Minimax), minimax by itself can run into a depth = 3 at maximum.
+- To speed up the algorithm, I used [alpha-beta pruning](https://en.wikipedia.org/wiki/alpha-beta_pruning) to get rid of useless branches (This made the algorithm run up to depth = 4)
+- To speed up the algorithm furthermore, I used [memoization](https://en.wikipedia.org/wiki/Memoization) (can be seen as Dynamic Programming) to avoid re-evaluating already evaluated positions, which made the algorithm run into depth up to 5!
 - When having more than one move with the same evaluation, the agent picks the move closer to the middle of the board, this detail actually gained me ~200 extra points in the [Connect X Simulation Competition](https://www.kaggle.com/competitions/connectx/leaderboard).
 - The next step is to edit the heuristic function to get better performance, then use reinforcement learning to improve the performance even more.
 
