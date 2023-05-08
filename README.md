@@ -19,6 +19,7 @@ You can find more information and details [here](https://www.kaggle.com/code/ale
 - The algorithm mainly used is minimax, minimax by itself can run into a depth = 3 at maximum.
 - To speed up the algorithm, I used alpha-beta pruning to get rid of useless branches (This made the algorithm run up to depth = 4)
 - To speed up the algorithm furthermore, I used memoization (Dynamic Programming) to avoid re-evaluating already evaluated positions, which made the algorithm run into depth up to 5!
+- When having more than one move with the same evaluation, the agent picks the move closer to the middle of the board, this detail actually gained me ~200 extra points in the [Connect X Simulation Competition](https://www.kaggle.com/competitions/connectx/leaderboard).
 - The next step is to edit the heuristic function to get better performance, then use reinforcement learning to improve the performance even more.
 
 # Heuristic Function (Evaluation)
