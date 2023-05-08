@@ -33,4 +33,17 @@ The heuristic function needs more work, changing some values would probably impr
 # Memoization (Dynamic Programming)
 To avoid re-evaluating already evaluated boards and positions, we use DP, which saves the results for already evaluated boards, and to speed up the process even more, we find a hash value for each board and store the evaluation for that board in a dictionary (Hash-Table) as a value to the hash used as a key value, so if we meet the same board again, we can simply check if it has already been calculated, and if so, we return its value without re-evaluating it or going deeper in its branch.
 
-**Note**: To run the notebook you will need to install kaggle-environments module first with the following command `!pip install kaggle-environments>=0.1.6`
+# Hashing (Encoding boards / positions)
+To use dynamic programming efficiently as described before, we need to find a hash value for each board that holds a very small probability of collisions, the hashing process was the following:
+- First, we picked a prime modulus value to perform modular arithmetic operations and avoid having large hash values, the chosen value is $10 ^ 9 + 7$.
+- initially, the hash for an empty grid is 0
+- For each cell that contains a disk of the first player, we add the value $5 ^ {index}$, where index is the index of the disk's cell if we flatten the board into a 1D list.
+- For each cell that contains a disk of the second player, we add the value $13 ^ {index}$, where index is the index of the disk's cell if we flatten the board into a 1D list.
+
+**Notes**:
+- We used values (5, 13) to represent first and second player as prime random numbers to avoid collision.
+- Power and add operations are performed under mod ($mod = 10 ^ 9 + 7$).
+- To find index of cell after flattening, $index = row \cdot rowsize + col$.
+
+# Running The Notebook
+To run the notebook you will need to install kaggle-environments module first with the following command `!pip install kaggle-environments>=0.1.6`
