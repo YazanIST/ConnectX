@@ -1,7 +1,7 @@
 # ConnectX
 This project is an AI agent to play connectX game (a generalization of the well-known [Connect 4](https://en.wikipedia.org/wiki/Connect_Four) game).
 
-It is based on [Kaggle](https://www.kaggle.com/) environment, and currently holds the rank ~20 worldwide in [Connect X Simulation Competition](https://www.kaggle.com/competitions/connectx/leaderboard).
+It is based on [Kaggle](https://www.kaggle.com/) environment, and currently holds the rank ~21 worldwide in [Connect X Simulation Competition](https://www.kaggle.com/competitions/connectx/leaderboard).
 
 # About Environment
 Parameters used are:
